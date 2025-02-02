@@ -1,0 +1,13 @@
+# fibonacci.py
+def fibonacci(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+# Ejemplo de uso
+if __name__ == "__main__":
+    n = int(input("Introduce el valor de n: "))
+    print(f"La sucesión de Fibonacci para n={n} es: {fibonacci(n)}")
